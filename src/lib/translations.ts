@@ -59,6 +59,10 @@ export interface Translation {
     terms: string;
     refund: string;
   };
+  meta: {
+    title: string;
+    description: string;
+  };
 }
 
 const en: Translation = {
@@ -157,6 +161,10 @@ const en: Translation = {
     privacy: "Privacy Policy",
     terms: "Terms of Service",
     refund: "Refund Policy",
+  },
+  meta: {
+    title: "Sprout Studio — Mac Apps for Windows Users | MacXplorer & MaCtrl",
+    description: "The best macbook essential apps for anyone switching from Windows to Mac. MacXplorer brings Windows Explorer to macOS, MaCtrl remaps your keys. Mac apps for windows users — one-time purchase.",
   },
 };
 
@@ -257,6 +265,10 @@ const ko: Translation = {
     terms: "이용약관",
     refund: "환불 정책",
   },
+  meta: {
+    title: "Sprout Studio — 맥북 필수 앱 | MacXplorer & MaCtrl",
+    description: "윈도우에서 맥으로 넘어온 분들을 위한 맥북 초기 설정 필수 앱. MacXplorer로 Windows 탐색기를 macOS에서, MaCtrl로 단축키 그대로 — 일회성 구매.",
+  },
 };
 
 const ja: Translation = {
@@ -355,6 +367,10 @@ const ja: Translation = {
     privacy: "プライバシーポリシー",
     terms: "利用規約",
     refund: "返金ポリシー",
+  },
+  meta: {
+    title: "Sprout Studio — Mac必須アプリ | MacXplorer & MaCtrl",
+    description: "WindowsからMacに乗り換えた方のためのMac必須アプリ。MacXplorerでWindowsエクスプローラーをmacOSに、MaCtrlでショートカットをそのまま — 買い切り。",
   },
 };
 
@@ -455,6 +471,10 @@ const zhCN: Translation = {
     terms: "服务条款",
     refund: "退款政策",
   },
+  meta: {
+    title: "Sprout Studio — Mac必备软件 | MacXplorer & MaCtrl",
+    description: "专为Windows转Mac用户打造的Mac必备软件。MacXplorer将Windows资源管理器带到macOS，MaCtrl让快捷键习惯无缝迁移 — 买断制，永久使用。",
+  },
 };
 
 const ar: Translation = {
@@ -553,6 +573,10 @@ const ar: Translation = {
     privacy: "سياسة الخصوصية",
     terms: "شروط الخدمة",
     refund: "سياسة الاسترداد",
+  },
+  meta: {
+    title: "Sprout Studio — أفضل تطبيقات Mac | MacXplorer & MaCtrl",
+    description: "تطبيقات Mac الأساسية للمنتقلين من Windows. MacXplorer يجلب مستكشف Windows إلى macOS، MaCtrl يعيد تعيين اختصاراتك — دفعة واحدة للأبد.",
   },
 };
 
@@ -653,6 +677,10 @@ const ru: Translation = {
     terms: "Условия использования",
     refund: "Политика возврата",
   },
+  meta: {
+    title: "Sprout Studio — Лучшие приложения для Mac | MacXplorer & MaCtrl",
+    description: "Необходимые приложения для Mac при переходе с Windows. MacXplorer — проводник Windows для macOS, MaCtrl — переназначение клавиш. Одноразовая покупка.",
+  },
 };
 
 const it: Translation = {
@@ -751,6 +779,10 @@ const it: Translation = {
     privacy: "Informativa sulla privacy",
     terms: "Termini di servizio",
     refund: "Politica di rimborso",
+  },
+  meta: {
+    title: "Sprout Studio — App essenziali per Mac | MacXplorer & MaCtrl",
+    description: "Le app indispensabili per chi passa da Windows a Mac. MacXplorer porta Esplora risorse su macOS, MaCtrl rimappa i tasti — acquisto una tantum.",
   },
 };
 
@@ -851,6 +883,10 @@ const de: Translation = {
     terms: "Nutzungsbedingungen",
     refund: "Rückgaberichtlinie",
   },
+  meta: {
+    title: "Sprout Studio — Unverzichtbare Mac-Apps | MacXplorer & MaCtrl",
+    description: "Die besten Mac-Apps für den Wechsel von Windows zu Mac. MacXplorer bringt den Windows Explorer auf macOS, MaCtrl belegt Tasten neu — einmalige Zahlung.",
+  },
 };
 
 const fr: Translation = {
@@ -949,6 +985,10 @@ const fr: Translation = {
     privacy: "Politique de confidentialité",
     terms: "Conditions d'utilisation",
     refund: "Politique de remboursement",
+  },
+  meta: {
+    title: "Sprout Studio — Apps Mac essentielles | MacXplorer & MaCtrl",
+    description: "Les meilleures apps pour passer de Windows à Mac. MacXplorer apporte l'Explorateur Windows sur macOS, MaCtrl remappes vos touches — achat unique.",
   },
 };
 
@@ -1049,6 +1089,10 @@ const ptBR: Translation = {
     terms: "Termos de serviço",
     refund: "Política de reembolso",
   },
+  meta: {
+    title: "Sprout Studio — Apps essenciais para Mac | MacXplorer & MaCtrl",
+    description: "Os melhores apps para quem migra do Windows para Mac. MacXplorer traz o Explorador de Arquivos para macOS, MaCtrl remapeia suas teclas — pagamento único.",
+  },
 };
 
 const es: Translation = {
@@ -1147,6 +1191,10 @@ const es: Translation = {
     privacy: "Política de privacidad",
     terms: "Términos de servicio",
     refund: "Política de reembolso",
+  },
+  meta: {
+    title: "Sprout Studio — Apps esenciales para Mac | MacXplorer & MaCtrl",
+    description: "Las mejores apps para quienes cambian de Windows a Mac. MacXplorer lleva el Explorador de Windows a macOS, MaCtrl reasigna tus teclas — pago único.",
   },
 };
 

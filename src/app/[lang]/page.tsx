@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { ScreenshotGallery } from "@/components/screenshot-gallery";
 import { buttonVariants } from "@/components/ui/button";
@@ -64,6 +65,38 @@ const PLAN_META = [
     highlighted: false,
   },
 ];
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const t = getTranslation(lang);
+  const url = `https://sproutstudio.app/${lang}`;
+  return {
+    title: t.meta.title,
+    description: t.meta.description,
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(
+        SUPPORTED_LANGS.map((l) => [l, `https://sproutstudio.app/${l}`])
+      ),
+    },
+    openGraph: {
+      title: t.meta.title,
+      description: t.meta.description,
+      url,
+      siteName: "Sprout Studio",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t.meta.title,
+      description: t.meta.description,
+    },
+  };
+}
 
 export default async function LangPage({
   params,
