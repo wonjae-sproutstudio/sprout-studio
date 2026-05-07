@@ -1,6 +1,19 @@
 import Image from "next/image";
+import type { Translation } from "@/lib/translations";
 
-export function SiteFooter() {
+const defaultFooter: Translation["footer"] = {
+  privacy: "Privacy Policy",
+  terms: "Terms of Service",
+  refund: "Refund Policy",
+};
+
+export function SiteFooter({
+  lang = "en",
+  t = defaultFooter,
+}: {
+  lang?: string;
+  t?: Translation["footer"];
+}) {
   return (
     <footer className="border-t border-border bg-muted/20">
       <div className="mx-auto max-w-5xl px-6 py-8">
@@ -16,23 +29,14 @@ export function SiteFooter() {
             Sprout Studio
           </div>
           <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-            <a
-              href="/privacy"
-              className="hover:text-foreground transition-colors"
-            >
-              Privacy Policy
+            <a href={`/${lang}/privacy`} className="hover:text-foreground transition-colors">
+              {t.privacy}
             </a>
-            <a
-              href="/terms"
-              className="hover:text-foreground transition-colors"
-            >
-              Terms of Service
+            <a href={`/${lang}/terms`} className="hover:text-foreground transition-colors">
+              {t.terms}
             </a>
-            <a
-              href="/refund"
-              className="hover:text-foreground transition-colors"
-            >
-              Refund Policy
+            <a href={`/${lang}/refund`} className="hover:text-foreground transition-colors">
+              {t.refund}
             </a>
             <a
               href="mailto:alchemist@sproutstudio.app"
