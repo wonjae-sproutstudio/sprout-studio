@@ -42,7 +42,7 @@ function detectLang(request: NextRequest): Lang {
   return DEFAULT_LANG;
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // /{lang} 경로인지 확인
