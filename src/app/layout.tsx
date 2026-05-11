@@ -61,6 +61,22 @@ export const metadata: Metadata = {
   description:
     "Sprout Studio crafts powerful, focused Mac apps. Explore MacXplorer and MaCtrl.",
   metadataBase: new URL("https://sproutstudio.app"),
+  alternates: {
+    languages: {
+      ko: "https://sproutstudio.app/ko",
+      en: "https://sproutstudio.app/en",
+      ja: "https://sproutstudio.app/ja",
+      "zh-CN": "https://sproutstudio.app/zh-CN",
+      ar: "https://sproutstudio.app/ar",
+      ru: "https://sproutstudio.app/ru",
+      it: "https://sproutstudio.app/it",
+      de: "https://sproutstudio.app/de",
+      fr: "https://sproutstudio.app/fr",
+      "pt-BR": "https://sproutstudio.app/pt-BR",
+      es: "https://sproutstudio.app/es",
+      "x-default": "https://sproutstudio.app/en",
+    },
+  },
   verification: {
     other: {
       "naver-site-verification": "67eedda2d42dfb004c63008986c8a8b806da0ff6",

@@ -72,6 +72,7 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
+  if (!(SUPPORTED_LANGS as readonly string[]).includes(lang)) notFound();
   const t = getTranslation(lang);
   const url = `https://sproutstudio.app/${lang}`;
   return {
@@ -79,9 +80,12 @@ export async function generateMetadata({
     description: t.meta.description,
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(
-        SUPPORTED_LANGS.map((l) => [l, `https://sproutstudio.app/${l}`])
-      ),
+      languages: {
+        ...Object.fromEntries(
+          SUPPORTED_LANGS.map((l) => [l, `https://sproutstudio.app/${l}`])
+        ),
+        "x-default": "https://sproutstudio.app/en",
+      },
     },
     openGraph: {
       title: t.meta.title,
