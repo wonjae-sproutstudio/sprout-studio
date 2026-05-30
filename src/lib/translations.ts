@@ -104,8 +104,8 @@ const en: Translation = {
     },
     macsnap: {
       subtitle: "Window Snapper · $5",
-      desc: "Windows-style Snap Layouts, faithfully built for Mac. Snap windows to halves, thirds, or corners with keyboard shortcuts — just like you do on Windows.",
-      features: ["Windows Snap Layout style", "Custom keyboard shortcuts", "Multi-display support", "Lightweight & native", "11 languages"],
+      desc: "Windows-style Snap Layouts, faithfully built for Mac. Snap windows to halves, thirds, or corners instantly — just like you do on Windows.",
+      features: ["Windows Snap Layout style", "Multi-display support", "Lightweight & native", "11 languages"],
       cta: "Buy MacSnap — $5",
     },
   },
@@ -174,7 +174,7 @@ const en: Translation = {
       },
       macsnap: {
         description: "Windows-style Snap Layouts for Mac",
-        features: ["Snap to halves, thirds & corners", "Custom keyboard shortcuts", "Multi-display support", "11 languages"],
+        features: ["Snap to halves, thirds & corners", "Multi-display support", "11 languages"],
         cta: "Buy MacSnap — $5",
       },
     },
@@ -220,8 +220,8 @@ const ko: Translation = {
     },
     macsnap: {
       subtitle: "윈도우 스냅 · $5",
-      desc: "Windows 스냅 레이아웃을 Mac에 충실히 재현했습니다. 키보드 단축키로 창을 절반, 삼분의 일, 모서리에 즉시 스냅 — Windows에서 하던 그대로.",
-      features: ["Windows 스냅 레이아웃 스타일", "커스텀 키보드 단축키", "다중 디스플레이 지원", "가볍고 네이티브", "11개 언어"],
+      desc: "Windows 스냅 레이아웃을 Mac에 충실히 재현했습니다. 창을 절반, 삼분의 일, 모서리에 즉시 스냅 — Windows에서 하던 그대로.",
+      features: ["Windows 스냅 레이아웃 스타일", "다중 디스플레이 지원", "가볍고 네이티브", "11개 언어"],
       cta: "MacSnap 구매하기 — $5",
     },
   },
@@ -290,7 +290,7 @@ const ko: Translation = {
       },
       macsnap: {
         description: "Mac을 위한 Windows 스냅 레이아웃",
-        features: ["절반·삼분의 일·모서리 스냅", "커스텀 키보드 단축키", "다중 디스플레이 지원", "11개 언어"],
+        features: ["절반·삼분의 일·모서리 스냅", "다중 디스플레이 지원", "11개 언어"],
         cta: "MacSnap 구매 — $5",
       },
     },
@@ -336,8 +336,8 @@ const ja: Translation = {
     },
     macsnap: {
       subtitle: "ウィンドウスナップ · $5",
-      desc: "Mac向けにWindowsスタイルのスナップレイアウトを忠実に再現。キーボードショートカットでウィンドウを半分、3分の1、コーナーにスナップ — Windowsと同じ感覚で。",
-      features: ["Windowsスナップレイアウトスタイル", "カスタムキーボードショートカット", "マルチディスプレイ対応", "軽量でネイティブ", "11言語対応"],
+      desc: "Mac向けにWindowsスタイルのスナップレイアウトを忠実に再現。ウィンドウを半分、3分の1、コーナーに瞬時にスナップ — Windowsと同じ感覚で。",
+      features: ["Windowsスナップレイアウトスタイル", "マルチディスプレイ対応", "軽量でネイティブ", "11言語対応"],
       cta: "MacSnapを購入 — $5",
     },
   },
@@ -406,7 +406,7 @@ const ja: Translation = {
       },
       macsnap: {
         description: "Mac向けWindowsスタイルのスナップレイアウト",
-        features: ["半分・3分の1・コーナーへスナップ", "カスタムキーボードショートカット", "マルチディスプレイ対応", "11言語対応"],
+        features: ["半分・3分の1・コーナーへスナップ", "マルチディスプレイ対応", "11言語対応"],
         cta: "MacSnapを購入 — $5",
       },
     },
@@ -452,8 +452,8 @@ const zhCN: Translation = {
     },
     macsnap: {
       subtitle: "窗口对齐 · $5",
-      desc: "为Mac忠实重现Windows风格的贴靠布局。用键盘快捷键将窗口即时贴靠到半屏、三分之一或角落 — 和Windows上一模一样。",
-      features: ["Windows贴靠布局风格", "自定义键盘快捷键", "多显示器支持", "轻量且原生", "11种语言"],
+      desc: "为Mac忠实重现Windows风格的贴靠布局。将窗口即时贴靠到半屏、三分之一或角落 — 和Windows上一模一样。",
+      features: ["Windows贴靠布局风格", "多显示器支持", "轻量且原生", "11种语言"],
       cta: "购买MacSnap — $5",
     },
   },
@@ -522,7 +522,7 @@ const zhCN: Translation = {
       },
       macsnap: {
         description: "适用于Mac的Windows风格贴靠布局",
-        features: ["贴靠到半屏/三分之一/角落", "自定义键盘快捷键", "多显示器支持", "11种语言"],
+        features: ["贴靠到半屏/三分之一/角落", "多显示器支持", "11种语言"],
         cta: "购买MacSnap — $5",
       },
     },
@@ -568,8 +568,8 @@ const ar: Translation = {
     },
     macsnap: {
       subtitle: "محاذاة النوافذ · $5",
-      desc: "تخطيطات التثبيت بنمط Windows مُعادة البناء لـ Mac. ثبّت النوافذ إلى النصف أو الثلث أو الزوايا بضغطة اختصار — تماماً كما تفعل على Windows.",
-      features: ["نمط تخطيط تثبيت Windows", "اختصارات لوحة مفاتيح مخصصة", "دعم متعدد الشاشات", "خفيف وأصيل", "11 لغة"],
+      desc: "تخطيطات التثبيت بنمط Windows مُعادة البناء لـ Mac. ثبّت النوافذ إلى النصف أو الثلث أو الزوايا فوراً — تماماً كما تفعل على Windows.",
+      features: ["نمط تخطيط تثبيت Windows", "دعم متعدد الشاشات", "خفيف وأصيل", "11 لغة"],
       cta: "اشترِ MacSnap — $5",
     },
   },
@@ -638,7 +638,7 @@ const ar: Translation = {
       },
       macsnap: {
         description: "تخطيطات تثبيت بنمط Windows لـ Mac",
-        features: ["تثبيت إلى النصف/الثلث/الزوايا", "اختصارات مخصصة", "دعم متعدد الشاشات", "11 لغة"],
+        features: ["تثبيت إلى النصف/الثلث/الزوايا", "دعم متعدد الشاشات", "11 لغة"],
         cta: "اشترِ MacSnap — $5",
       },
     },
@@ -684,8 +684,8 @@ const ru: Translation = {
     },
     macsnap: {
       subtitle: "Привязка окон · $5",
-      desc: "Snap-раскладки в стиле Windows, воссозданные для Mac. Мгновенно прикрепляйте окна к половине, трети или углу с помощью горячих клавиш — точно как в Windows.",
-      features: ["Стиль Snap-раскладок Windows", "Пользовательские горячие клавиши", "Поддержка нескольких мониторов", "Лёгкое и нативное", "11 языков"],
+      desc: "Snap-раскладки в стиле Windows, воссозданные для Mac. Мгновенно прикрепляйте окна к половине, трети или углу — точно как в Windows.",
+      features: ["Стиль Snap-раскладок Windows", "Поддержка нескольких мониторов", "Лёгкое и нативное", "11 языков"],
       cta: "Купить MacSnap — $5",
     },
   },
@@ -754,7 +754,7 @@ const ru: Translation = {
       },
       macsnap: {
         description: "Snap-раскладки в стиле Windows для Mac",
-        features: ["Привязка к половине/трети/углу", "Пользовательские горячие клавиши", "Поддержка нескольких мониторов", "11 языков"],
+        features: ["Привязка к половине/трети/углу", "Поддержка нескольких мониторов", "11 языков"],
         cta: "Купить MacSnap — $5",
       },
     },
@@ -800,8 +800,8 @@ const it: Translation = {
     },
     macsnap: {
       subtitle: "Snap finestre · $5",
-      desc: "Layout Snap in stile Windows, fedelmente ricreati per Mac. Aggancia le finestre a metà, un terzo o agli angoli con una scorciatoia — proprio come su Windows.",
-      features: ["Stile Snap Layout Windows", "Scorciatoie tastiera personalizzate", "Supporto multi-display", "Leggero e nativo", "11 lingue"],
+      desc: "Layout Snap in stile Windows, fedelmente ricreati per Mac. Aggancia le finestre a metà, un terzo o agli angoli istantaneamente — proprio come su Windows.",
+      features: ["Stile Snap Layout Windows", "Supporto multi-display", "Leggero e nativo", "11 lingue"],
       cta: "Acquista MacSnap — $5",
     },
   },
@@ -870,7 +870,7 @@ const it: Translation = {
       },
       macsnap: {
         description: "Snap Layout in stile Windows per Mac",
-        features: ["Snap a metà, terzi e angoli", "Scorciatoie personalizzate", "Supporto multi-display", "11 lingue"],
+        features: ["Snap a metà, terzi e angoli", "Supporto multi-display", "11 lingue"],
         cta: "Acquista MacSnap — $5",
       },
     },
@@ -916,8 +916,8 @@ const de: Translation = {
     },
     macsnap: {
       subtitle: "Fenster-Snap · $5",
-      desc: "Snap-Layouts im Windows-Stil, für Mac treu nachgebaut. Fenster mit Tastenkürzel sofort an Hälften, Drittel oder Ecken andocken — genau wie auf Windows.",
-      features: ["Windows Snap-Layout-Stil", "Benutzerdefinierte Tastenkürzel", "Multi-Monitor-Unterstützung", "Leichtgewichtig & nativ", "11 Sprachen"],
+      desc: "Snap-Layouts im Windows-Stil, für Mac treu nachgebaut. Fenster sofort an Hälften, Drittel oder Ecken andocken — genau wie auf Windows.",
+      features: ["Windows Snap-Layout-Stil", "Multi-Monitor-Unterstützung", "Leichtgewichtig & nativ", "11 Sprachen"],
       cta: "MacSnap kaufen — $5",
     },
   },
@@ -986,7 +986,7 @@ const de: Translation = {
       },
       macsnap: {
         description: "Snap-Layouts im Windows-Stil für Mac",
-        features: ["Andocken an Hälften/Drittel/Ecken", "Benutzerdefinierte Tastenkürzel", "Multi-Monitor-Unterstützung", "11 Sprachen"],
+        features: ["Andocken an Hälften/Drittel/Ecken", "Multi-Monitor-Unterstützung", "11 Sprachen"],
         cta: "MacSnap kaufen — $5",
       },
     },
@@ -1032,8 +1032,8 @@ const fr: Translation = {
     },
     macsnap: {
       subtitle: "Snap de fenêtres · $5",
-      desc: "Les Snap Layouts de Windows, fidèlement recréés pour Mac. Ancrez les fenêtres en moitiés, tiers ou coins avec un raccourci — exactement comme sur Windows.",
-      features: ["Style Snap Layouts Windows", "Raccourcis clavier personnalisés", "Support multi-écrans", "Léger et natif", "11 langues"],
+      desc: "Les Snap Layouts de Windows, fidèlement recréés pour Mac. Ancrez les fenêtres en moitiés, tiers ou coins instantanément — exactement comme sur Windows.",
+      features: ["Style Snap Layouts Windows", "Support multi-écrans", "Léger et natif", "11 langues"],
       cta: "Acheter MacSnap — $5",
     },
   },
@@ -1102,7 +1102,7 @@ const fr: Translation = {
       },
       macsnap: {
         description: "Snap Layouts style Windows pour Mac",
-        features: ["Ancrer en moitiés, tiers et coins", "Raccourcis personnalisés", "Support multi-écrans", "11 langues"],
+        features: ["Ancrer en moitiés, tiers et coins", "Support multi-écrans", "11 langues"],
         cta: "Acheter MacSnap — $5",
       },
     },
@@ -1148,8 +1148,8 @@ const ptBR: Translation = {
     },
     macsnap: {
       subtitle: "Snap de janelas · $5",
-      desc: "Snap Layouts no estilo Windows, fielmente recriados para Mac. Encaixe janelas em metades, terços ou cantos com um atalho — exatamente como no Windows.",
-      features: ["Estilo Snap Layouts Windows", "Atalhos de teclado personalizados", "Suporte multi-monitor", "Leve e nativo", "11 idiomas"],
+      desc: "Snap Layouts no estilo Windows, fielmente recriados para Mac. Encaixe janelas em metades, terços ou cantos instantaneamente — exatamente como no Windows.",
+      features: ["Estilo Snap Layouts Windows", "Suporte multi-monitor", "Leve e nativo", "11 idiomas"],
       cta: "Comprar MacSnap — $5",
     },
   },
@@ -1218,7 +1218,7 @@ const ptBR: Translation = {
       },
       macsnap: {
         description: "Snap Layouts estilo Windows para Mac",
-        features: ["Encaixar em metades/terços/cantos", "Atalhos personalizados", "Suporte multi-monitor", "11 idiomas"],
+        features: ["Encaixar em metades/terços/cantos", "Suporte multi-monitor", "11 idiomas"],
         cta: "Comprar MacSnap — $5",
       },
     },
@@ -1264,8 +1264,8 @@ const es: Translation = {
     },
     macsnap: {
       subtitle: "Snap de ventanas · $5",
-      desc: "Snap Layouts al estilo Windows, fielmente recreados para Mac. Fija ventanas a mitades, tercios o esquinas con un atajo — exactamente como en Windows.",
-      features: ["Estilo Snap Layouts Windows", "Atajos de teclado personalizados", "Soporte multi-pantalla", "Ligero y nativo", "11 idiomas"],
+      desc: "Snap Layouts al estilo Windows, fielmente recreados para Mac. Fija ventanas a mitades, tercios o esquinas al instante — exactamente como en Windows.",
+      features: ["Estilo Snap Layouts Windows", "Soporte multi-pantalla", "Ligero y nativo", "11 idiomas"],
       cta: "Comprar MacSnap — $5",
     },
   },
@@ -1334,7 +1334,7 @@ const es: Translation = {
       },
       macsnap: {
         description: "Snap Layouts estilo Windows para Mac",
-        features: ["Fijar en mitades, tercios y esquinas", "Atajos personalizados", "Soporte multi-pantalla", "11 idiomas"],
+        features: ["Fijar en mitades, tercios y esquinas", "Soporte multi-pantalla", "11 idiomas"],
         cta: "Comprar MacSnap — $5",
       },
     },
