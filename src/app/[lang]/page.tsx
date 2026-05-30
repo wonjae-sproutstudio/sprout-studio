@@ -39,6 +39,8 @@ const mactrlScreenshots = [
   { src: "/screenshots/mactrl-03.png", alt: "Settings — blacklist mode with per-app rules", w: 588, h: 659 },
 ];
 
+const macsnapScreenshots: { src: string; alt: string; w: number; h: number }[] = [];
+
 const PLAN_META = [
   {
     id: "macxplorer" as const,
@@ -46,6 +48,14 @@ const PLAN_META = [
     price: "$5",
     originalPrice: null as string | null,
     href: "https://store.sproutstudio.app/buy/cff90b2d-8965-466b-88da-9518e1018438",
+    highlighted: false,
+  },
+  {
+    id: "macsnap" as const,
+    name: "MacSnap",
+    price: "$5",
+    originalPrice: null as string | null,
+    href: "https://store.sproutstudio.app/checkout/buy/1c83d6e5-c7a6-47fd-9121-fdcc6f33bace",
     highlighted: false,
   },
   {
@@ -153,7 +163,7 @@ export default async function LangPage({
             <h2 className="text-2xl font-bold tracking-tight mb-12 text-center">
               {t.apps.heading}
             </h2>
-            <div className="grid gap-8 sm:grid-cols-2">
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {/* MacXplorer */}
               <div className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm">
                 <div className="mb-6 w-full overflow-hidden rounded-xl aspect-video">
@@ -227,6 +237,43 @@ export default async function LangPage({
                   {t.apps.mactrl.cta}
                 </a>
               </div>
+
+              {/* MacSnap */}
+              <div className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm">
+                <div className="mb-6 w-full overflow-hidden rounded-xl aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/ZikYUn_8DaA"
+                    title="MacSnap Introduction"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <Image src="/images/macsnap.png" alt="MacSnap" width={36} height={36} className="rounded-xl" />
+                  <div>
+                    <h3 className="text-xl font-bold tracking-tight">MacSnap</h3>
+                    <span className="text-xs text-muted-foreground">{t.apps.macsnap.subtitle}</span>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                  {t.apps.macsnap.desc}
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground mb-6 flex-1">
+                  {t.apps.macsnap.features.map((f) => (
+                    <li key={f} className="flex items-center gap-2">
+                      <Check className="h-3.5 w-3.5 text-cyan-500 shrink-0" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="https://store.sproutstudio.app/checkout/buy/1c83d6e5-c7a6-47fd-9121-fdcc6f33bace"
+                  className={cn(buttonVariants(), "rounded-full w-full justify-center bg-cyan-500 hover:bg-cyan-600")}
+                >
+                  {t.apps.macsnap.cta}
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -247,6 +294,16 @@ export default async function LangPage({
           <p className="text-muted-foreground mb-6 text-sm">{t.screenshots.mactrlSubtitle}</p>
           <ScreenshotGallery screenshots={mactrlScreenshots} />
         </section>
+
+        {macsnapScreenshots.length > 0 && (
+          <section className="mx-auto max-w-5xl px-6 pb-14">
+            <h2 className="text-2xl font-bold tracking-tight mb-2">
+              {t.screenshots.macsnapHeading}
+            </h2>
+            <p className="text-muted-foreground mb-6 text-sm">{t.screenshots.macsnapSubtitle}</p>
+            <ScreenshotGallery screenshots={macsnapScreenshots} />
+          </section>
+        )}
 
         {/* ── Features ── */}
         <section className="mx-auto max-w-5xl px-6 py-20">
@@ -308,7 +365,7 @@ export default async function LangPage({
             {t.pricing.heading}
           </h2>
           <p className="text-muted-foreground text-center mb-12">{t.pricing.subtitle}</p>
-          <div className="grid gap-6 sm:grid-cols-3 items-stretch">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
             {PLAN_META.map((plan) => {
               const pt = t.pricing.plans[plan.id];
               return (

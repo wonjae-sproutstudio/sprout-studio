@@ -29,12 +29,20 @@ export interface Translation {
       features: string[];
       cta: string;
     };
+    macsnap: {
+      subtitle: string;
+      desc: string;
+      features: string[];
+      cta: string;
+    };
   };
   screenshots: {
     macxplorerHeading: string;
     macxplorerSubtitle: string;
     mactrlHeading: string;
     mactrlSubtitle: string;
+    macsnapHeading: string;
+    macsnapSubtitle: string;
   };
   features: {
     heading: string;
@@ -52,6 +60,7 @@ export interface Translation {
       macxplorer: { description: string; features: string[]; cta: string };
       bundle: { description: string; features: string[]; badge: string; cta: string };
       mactrl: { description: string; features: string[]; cta: string };
+      macsnap: { description: string; features: string[]; cta: string };
     };
   };
   footer: {
@@ -75,7 +84,7 @@ const en: Translation = {
   hero: {
     badge: "Made for Mac",
     h1: ["The comfort of Windows.", "The beauty of macOS."],
-    desc: "Two focused apps that bring the best of Windows into macOS — without sacrificing the Mac experience you love.",
+    desc: "Focused apps that bring the best of Windows into macOS — without sacrificing the Mac experience you love.",
     cta1: "Explore Apps",
     cta2: "Get the Bundle — $8",
   },
@@ -93,12 +102,20 @@ const en: Translation = {
       features: ["Instant key swap", "Per-app whitelist / blacklist", "Lightweight & native", "11 languages"],
       cta: "Buy MaCtrl — $5",
     },
+    macsnap: {
+      subtitle: "Window Snapper · $5",
+      desc: "Windows-style Snap Layouts, faithfully built for Mac. Snap windows to halves, thirds, or corners with keyboard shortcuts — just like you do on Windows.",
+      features: ["Windows Snap Layout style", "Custom keyboard shortcuts", "Multi-display support", "Lightweight & native", "11 languages"],
+      cta: "Buy MacSnap — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorer in Action",
     macxplorerSubtitle: "See the real app before you buy.",
     mactrlHeading: "MaCtrl in Action",
     mactrlSubtitle: "Menu bar toggle, whitelist, and blacklist — all in one lightweight app.",
+    macsnapHeading: "MacSnap in Action",
+    macsnapSubtitle: "Snap windows exactly like Windows.",
   },
   features: {
     heading: "Why choose Sprout Studio apps?",
@@ -155,6 +172,11 @@ const en: Translation = {
         features: ["Instant key swap toggle", "Per-app whitelist / blacklist", "Lightweight & native", "11 languages"],
         cta: "Buy MaCtrl — $5",
       },
+      macsnap: {
+        description: "Windows-style Snap Layouts for Mac",
+        features: ["Snap to halves, thirds & corners", "Custom keyboard shortcuts", "Multi-display support", "11 languages"],
+        cta: "Buy MacSnap — $5",
+      },
     },
   },
   footer: {
@@ -163,8 +185,8 @@ const en: Translation = {
     refund: "Refund Policy",
   },
   meta: {
-    title: "Sprout Studio — Mac Apps for Windows Users | MacXplorer & MaCtrl",
-    description: "The best macbook essential apps for anyone switching from Windows to Mac. MacXplorer brings Windows Explorer to macOS, MaCtrl remaps your keys. Mac apps for windows users — one-time purchase.",
+    title: "Sprout Studio — Mac Apps for Windows Users | MacXplorer, MaCtrl & MacSnap",
+    description: "The best macbook essential apps for anyone switching from Windows to Mac. MacXplorer brings Windows Explorer to macOS, MaCtrl remaps your keys, MacSnap adds Snap Layouts. Mac apps for windows users — one-time purchase.",
   },
 };
 
@@ -196,12 +218,20 @@ const ko: Translation = {
       features: ["즉시 키 교환", "앱별 화이트리스트 / 블랙리스트", "가볍고 네이티브", "11개 언어"],
       cta: "MaCtrl 구매하기 — $5",
     },
+    macsnap: {
+      subtitle: "윈도우 스냅 · $5",
+      desc: "Windows 스냅 레이아웃을 Mac에 충실히 재현했습니다. 키보드 단축키로 창을 절반, 삼분의 일, 모서리에 즉시 스냅 — Windows에서 하던 그대로.",
+      features: ["Windows 스냅 레이아웃 스타일", "커스텀 키보드 단축키", "다중 디스플레이 지원", "가볍고 네이티브", "11개 언어"],
+      cta: "MacSnap 구매하기 — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorer 실제 화면",
     macxplorerSubtitle: "구매 전 실제 앱을 확인하세요.",
     mactrlHeading: "MaCtrl 실제 화면",
     mactrlSubtitle: "메뉴 바 토글, 화이트리스트, 블랙리스트 — 하나의 가벼운 앱으로.",
+    macsnapHeading: "MacSnap 실제 화면",
+    macsnapSubtitle: "Windows처럼 창을 스냅하세요.",
   },
   features: {
     heading: "왜 Sprout Studio 앱인가요?",
@@ -258,6 +288,11 @@ const ko: Translation = {
         features: ["즉시 키 교환 토글", "앱별 화이트리스트 / 블랙리스트", "가볍고 네이티브", "11개 언어"],
         cta: "MaCtrl 구매 — $5",
       },
+      macsnap: {
+        description: "Mac을 위한 Windows 스냅 레이아웃",
+        features: ["절반·삼분의 일·모서리 스냅", "커스텀 키보드 단축키", "다중 디스플레이 지원", "11개 언어"],
+        cta: "MacSnap 구매 — $5",
+      },
     },
   },
   footer: {
@@ -266,8 +301,8 @@ const ko: Translation = {
     refund: "환불 정책",
   },
   meta: {
-    title: "Sprout Studio — 맥북 필수 앱 | MacXplorer & MaCtrl",
-    description: "윈도우에서 맥으로 넘어온 분들을 위한 맥북 초기 설정 필수 앱. MacXplorer로 Windows 탐색기를 macOS에서, MaCtrl로 단축키 그대로 — 일회성 구매.",
+    title: "Sprout Studio — 맥북 필수 앱 | MacXplorer, MaCtrl & MacSnap",
+    description: "윈도우에서 맥으로 넘어온 분들을 위한 맥북 초기 설정 필수 앱. MacXplorer로 Windows 탐색기를, MaCtrl로 단축키를, MacSnap으로 스냅 레이아웃을 그대로 — 일회성 구매.",
   },
 };
 
@@ -299,12 +334,20 @@ const ja: Translation = {
       features: ["瞬時のキー入れ替え", "アプリ別ホワイトリスト/ブラックリスト", "軽量でネイティブ", "11言語対応"],
       cta: "MaCtrlを購入 — $5",
     },
+    macsnap: {
+      subtitle: "ウィンドウスナップ · $5",
+      desc: "Mac向けにWindowsスタイルのスナップレイアウトを忠実に再現。キーボードショートカットでウィンドウを半分、3分の1、コーナーにスナップ — Windowsと同じ感覚で。",
+      features: ["Windowsスナップレイアウトスタイル", "カスタムキーボードショートカット", "マルチディスプレイ対応", "軽量でネイティブ", "11言語対応"],
+      cta: "MacSnapを購入 — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorerを実際に見る",
     macxplorerSubtitle: "購入前に実際のアプリを確認。",
     mactrlHeading: "MaCtrlを実際に見る",
     mactrlSubtitle: "メニューバートグル、ホワイトリスト、ブラックリスト — 1つの軽量アプリで。",
+    macsnapHeading: "MacSnapを実際に見る",
+    macsnapSubtitle: "Windowsと同じようにウィンドウをスナップ。",
   },
   features: {
     heading: "なぜSprout Studioのアプリを選ぶの？",
@@ -361,6 +404,11 @@ const ja: Translation = {
         features: ["即時キー入れ替えトグル", "アプリ別ホワイトリスト/ブラックリスト", "軽量でネイティブ", "11言語対応"],
         cta: "MaCtrlを購入 — $5",
       },
+      macsnap: {
+        description: "Mac向けWindowsスタイルのスナップレイアウト",
+        features: ["半分・3分の1・コーナーへスナップ", "カスタムキーボードショートカット", "マルチディスプレイ対応", "11言語対応"],
+        cta: "MacSnapを購入 — $5",
+      },
     },
   },
   footer: {
@@ -369,8 +417,8 @@ const ja: Translation = {
     refund: "返金ポリシー",
   },
   meta: {
-    title: "Sprout Studio — Mac必須アプリ | MacXplorer & MaCtrl",
-    description: "WindowsからMacに乗り換えた方のためのMac必須アプリ。MacXplorerでWindowsエクスプローラーをmacOSに、MaCtrlでショートカットをそのまま — 買い切り。",
+    title: "Sprout Studio — Mac必須アプリ | MacXplorer, MaCtrl & MacSnap",
+    description: "WindowsからMacに乗り換えた方のためのMac必須アプリ。MacXplorerでWindowsエクスプローラーを、MaCtrlでショートカットを、MacSnapでスナップレイアウトをそのまま — 買い切り。",
   },
 };
 
@@ -402,12 +450,20 @@ const zhCN: Translation = {
       features: ["即时按键交换", "每应用白名单/黑名单", "轻量且原生", "11种语言"],
       cta: "购买MaCtrl — $5",
     },
+    macsnap: {
+      subtitle: "窗口对齐 · $5",
+      desc: "为Mac忠实重现Windows风格的贴靠布局。用键盘快捷键将窗口即时贴靠到半屏、三分之一或角落 — 和Windows上一模一样。",
+      features: ["Windows贴靠布局风格", "自定义键盘快捷键", "多显示器支持", "轻量且原生", "11种语言"],
+      cta: "购买MacSnap — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorer实际效果",
     macxplorerSubtitle: "购买前先看真实的应用。",
     mactrlHeading: "MaCtrl实际效果",
     mactrlSubtitle: "菜单栏开关、白名单和黑名单 — 一款轻量应用全搞定。",
+    macsnapHeading: "MacSnap实际效果",
+    macsnapSubtitle: "像Windows一样对齐窗口。",
   },
   features: {
     heading: "为什么选择Sprout Studio应用？",
@@ -464,6 +520,11 @@ const zhCN: Translation = {
         features: ["即时按键交换切换", "每应用白名单/黑名单", "轻量且原生", "11种语言"],
         cta: "购买MaCtrl — $5",
       },
+      macsnap: {
+        description: "适用于Mac的Windows风格贴靠布局",
+        features: ["贴靠到半屏/三分之一/角落", "自定义键盘快捷键", "多显示器支持", "11种语言"],
+        cta: "购买MacSnap — $5",
+      },
     },
   },
   footer: {
@@ -472,8 +533,8 @@ const zhCN: Translation = {
     refund: "退款政策",
   },
   meta: {
-    title: "Sprout Studio — Mac必备软件 | MacXplorer & MaCtrl",
-    description: "专为Windows转Mac用户打造的Mac必备软件。MacXplorer将Windows资源管理器带到macOS，MaCtrl让快捷键习惯无缝迁移 — 买断制，永久使用。",
+    title: "Sprout Studio — Mac必备软件 | MacXplorer, MaCtrl & MacSnap",
+    description: "专为Windows转Mac用户打造的Mac必备软件。MacXplorer将Windows资源管理器带到macOS，MaCtrl让快捷键习惯无缝迁移，MacSnap带来贴靠布局 — 买断制，永久使用。",
   },
 };
 
@@ -505,12 +566,20 @@ const ar: Translation = {
       features: ["تبديل فوري للمفاتيح", "قائمة بيضاء/سوداء لكل تطبيق", "خفيف وأصيل", "11 لغة"],
       cta: "اشترِ MaCtrl — $5",
     },
+    macsnap: {
+      subtitle: "محاذاة النوافذ · $5",
+      desc: "تخطيطات التثبيت بنمط Windows مُعادة البناء لـ Mac. ثبّت النوافذ إلى النصف أو الثلث أو الزوايا بضغطة اختصار — تماماً كما تفعل على Windows.",
+      features: ["نمط تخطيط تثبيت Windows", "اختصارات لوحة مفاتيح مخصصة", "دعم متعدد الشاشات", "خفيف وأصيل", "11 لغة"],
+      cta: "اشترِ MacSnap — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorer في العمل",
     macxplorerSubtitle: "شاهد التطبيق الحقيقي قبل الشراء.",
     mactrlHeading: "MaCtrl في العمل",
     mactrlSubtitle: "تبديل شريط القائمة، القائمة البيضاء والسوداء — في تطبيق خفيف واحد.",
+    macsnapHeading: "MacSnap في العمل",
+    macsnapSubtitle: "ثبّت النوافذ تماماً كـ Windows.",
   },
   features: {
     heading: "لماذا تختار تطبيقات Sprout Studio؟",
@@ -567,6 +636,11 @@ const ar: Translation = {
         features: ["تبديل فوري بزر", "قائمة بيضاء/سوداء لكل تطبيق", "خفيف وأصيل", "11 لغة"],
         cta: "اشترِ MaCtrl — $5",
       },
+      macsnap: {
+        description: "تخطيطات تثبيت بنمط Windows لـ Mac",
+        features: ["تثبيت إلى النصف/الثلث/الزوايا", "اختصارات مخصصة", "دعم متعدد الشاشات", "11 لغة"],
+        cta: "اشترِ MacSnap — $5",
+      },
     },
   },
   footer: {
@@ -575,8 +649,8 @@ const ar: Translation = {
     refund: "سياسة الاسترداد",
   },
   meta: {
-    title: "Sprout Studio — أفضل تطبيقات Mac | MacXplorer & MaCtrl",
-    description: "تطبيقات Mac الأساسية للمنتقلين من Windows. MacXplorer يجلب مستكشف Windows إلى macOS، MaCtrl يعيد تعيين اختصاراتك — دفعة واحدة للأبد.",
+    title: "Sprout Studio — أفضل تطبيقات Mac | MacXplorer, MaCtrl & MacSnap",
+    description: "تطبيقات Mac الأساسية للمنتقلين من Windows. MacXplorer يجلب مستكشف Windows، MaCtrl يعيد تعيين اختصاراتك، MacSnap يضيف تخطيطات التثبيت — دفعة واحدة للأبد.",
   },
 };
 
@@ -608,12 +682,20 @@ const ru: Translation = {
       features: ["Мгновенная замена клавиш", "Белый/чёрный список для приложений", "Лёгкое и нативное", "11 языков"],
       cta: "Купить MaCtrl — $5",
     },
+    macsnap: {
+      subtitle: "Привязка окон · $5",
+      desc: "Snap-раскладки в стиле Windows, воссозданные для Mac. Мгновенно прикрепляйте окна к половине, трети или углу с помощью горячих клавиш — точно как в Windows.",
+      features: ["Стиль Snap-раскладок Windows", "Пользовательские горячие клавиши", "Поддержка нескольких мониторов", "Лёгкое и нативное", "11 языков"],
+      cta: "Купить MacSnap — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorer в действии",
     macxplorerSubtitle: "Посмотрите реальное приложение перед покупкой.",
     mactrlHeading: "MaCtrl в действии",
     mactrlSubtitle: "Переключатель в строке меню, белый и чёрный список — всё в одном лёгком приложении.",
+    macsnapHeading: "MacSnap в действии",
+    macsnapSubtitle: "Прикрепляйте окна как в Windows.",
   },
   features: {
     heading: "Почему Sprout Studio?",
@@ -670,6 +752,11 @@ const ru: Translation = {
         features: ["Мгновенный переключатель клавиш", "Белый/чёрный список для приложений", "Лёгкое и нативное", "11 языков"],
         cta: "Купить MaCtrl — $5",
       },
+      macsnap: {
+        description: "Snap-раскладки в стиле Windows для Mac",
+        features: ["Привязка к половине/трети/углу", "Пользовательские горячие клавиши", "Поддержка нескольких мониторов", "11 языков"],
+        cta: "Купить MacSnap — $5",
+      },
     },
   },
   footer: {
@@ -678,8 +765,8 @@ const ru: Translation = {
     refund: "Политика возврата",
   },
   meta: {
-    title: "Sprout Studio — Лучшие приложения для Mac | MacXplorer & MaCtrl",
-    description: "Необходимые приложения для Mac при переходе с Windows. MacXplorer — проводник Windows для macOS, MaCtrl — переназначение клавиш. Одноразовая покупка.",
+    title: "Sprout Studio — Лучшие приложения для Mac | MacXplorer, MaCtrl & MacSnap",
+    description: "Необходимые приложения для Mac при переходе с Windows. MacXplorer — проводник Windows для macOS, MaCtrl — переназначение клавиш, MacSnap — Snap-раскладки. Одноразовая покупка.",
   },
 };
 
@@ -711,12 +798,20 @@ const it: Translation = {
       features: ["Scambio tasti istantaneo", "Lista bianca/nera per app", "Leggero e nativo", "11 lingue"],
       cta: "Acquista MaCtrl — $5",
     },
+    macsnap: {
+      subtitle: "Snap finestre · $5",
+      desc: "Layout Snap in stile Windows, fedelmente ricreati per Mac. Aggancia le finestre a metà, un terzo o agli angoli con una scorciatoia — proprio come su Windows.",
+      features: ["Stile Snap Layout Windows", "Scorciatoie tastiera personalizzate", "Supporto multi-display", "Leggero e nativo", "11 lingue"],
+      cta: "Acquista MacSnap — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorer in azione",
     macxplorerSubtitle: "Guarda l'app vera prima di acquistare.",
     mactrlHeading: "MaCtrl in azione",
     mactrlSubtitle: "Toggle nella barra menu, lista bianca e nera — tutto in un'app leggera.",
+    macsnapHeading: "MacSnap in azione",
+    macsnapSubtitle: "Aggancia le finestre proprio come su Windows.",
   },
   features: {
     heading: "Perché scegliere le app Sprout Studio?",
@@ -773,6 +868,11 @@ const it: Translation = {
         features: ["Toggle scambio tasti istantaneo", "Lista bianca/nera per app", "Leggero e nativo", "11 lingue"],
         cta: "Acquista MaCtrl — $5",
       },
+      macsnap: {
+        description: "Snap Layout in stile Windows per Mac",
+        features: ["Snap a metà, terzi e angoli", "Scorciatoie personalizzate", "Supporto multi-display", "11 lingue"],
+        cta: "Acquista MacSnap — $5",
+      },
     },
   },
   footer: {
@@ -781,8 +881,8 @@ const it: Translation = {
     refund: "Politica di rimborso",
   },
   meta: {
-    title: "Sprout Studio — App essenziali per Mac | MacXplorer & MaCtrl",
-    description: "Le app indispensabili per chi passa da Windows a Mac. MacXplorer porta Esplora risorse su macOS, MaCtrl rimappa i tasti — acquisto una tantum.",
+    title: "Sprout Studio — App essenziali per Mac | MacXplorer, MaCtrl & MacSnap",
+    description: "Le app indispensabili per chi passa da Windows a Mac. MacXplorer porta Esplora risorse su macOS, MaCtrl rimappa i tasti, MacSnap aggiunge gli Snap Layout — acquisto una tantum.",
   },
 };
 
@@ -814,12 +914,20 @@ const de: Translation = {
       features: ["Sofortiger Tastentausch", "Weiß-/Schwarzliste pro App", "Leichtgewichtig & nativ", "11 Sprachen"],
       cta: "MaCtrl kaufen — $5",
     },
+    macsnap: {
+      subtitle: "Fenster-Snap · $5",
+      desc: "Snap-Layouts im Windows-Stil, für Mac treu nachgebaut. Fenster mit Tastenkürzel sofort an Hälften, Drittel oder Ecken andocken — genau wie auf Windows.",
+      features: ["Windows Snap-Layout-Stil", "Benutzerdefinierte Tastenkürzel", "Multi-Monitor-Unterstützung", "Leichtgewichtig & nativ", "11 Sprachen"],
+      cta: "MacSnap kaufen — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorer in Aktion",
     macxplorerSubtitle: "Sieh die echte App vor dem Kauf.",
     mactrlHeading: "MaCtrl in Aktion",
     mactrlSubtitle: "Menüleisten-Toggle, Weiß- und Schwarzliste — alles in einer leichten App.",
+    macsnapHeading: "MacSnap in Aktion",
+    macsnapSubtitle: "Fenster genau wie unter Windows andocken.",
   },
   features: {
     heading: "Warum Sprout Studio Apps?",
@@ -876,6 +984,11 @@ const de: Translation = {
         features: ["Sofortiger Tastentausch", "Weiß-/Schwarzliste pro App", "Leichtgewichtig & nativ", "11 Sprachen"],
         cta: "MaCtrl kaufen — $5",
       },
+      macsnap: {
+        description: "Snap-Layouts im Windows-Stil für Mac",
+        features: ["Andocken an Hälften/Drittel/Ecken", "Benutzerdefinierte Tastenkürzel", "Multi-Monitor-Unterstützung", "11 Sprachen"],
+        cta: "MacSnap kaufen — $5",
+      },
     },
   },
   footer: {
@@ -884,8 +997,8 @@ const de: Translation = {
     refund: "Rückgaberichtlinie",
   },
   meta: {
-    title: "Sprout Studio — Unverzichtbare Mac-Apps | MacXplorer & MaCtrl",
-    description: "Die besten Mac-Apps für den Wechsel von Windows zu Mac. MacXplorer bringt den Windows Explorer auf macOS, MaCtrl belegt Tasten neu — einmalige Zahlung.",
+    title: "Sprout Studio — Unverzichtbare Mac-Apps | MacXplorer, MaCtrl & MacSnap",
+    description: "Die besten Mac-Apps für den Wechsel von Windows zu Mac. MacXplorer bringt den Windows Explorer auf macOS, MaCtrl belegt Tasten neu, MacSnap fügt Snap-Layouts hinzu — einmalige Zahlung.",
   },
 };
 
@@ -917,12 +1030,20 @@ const fr: Translation = {
       features: ["Échange de touches instantané", "Liste blanche/noire par app", "Léger et natif", "11 langues"],
       cta: "Acheter MaCtrl — $5",
     },
+    macsnap: {
+      subtitle: "Snap de fenêtres · $5",
+      desc: "Les Snap Layouts de Windows, fidèlement recréés pour Mac. Ancrez les fenêtres en moitiés, tiers ou coins avec un raccourci — exactement comme sur Windows.",
+      features: ["Style Snap Layouts Windows", "Raccourcis clavier personnalisés", "Support multi-écrans", "Léger et natif", "11 langues"],
+      cta: "Acheter MacSnap — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorer en action",
     macxplorerSubtitle: "Découvrez la vraie application avant d'acheter.",
     mactrlHeading: "MaCtrl en action",
     mactrlSubtitle: "Bascule dans la barre de menu, liste blanche et noire — dans une application légère.",
+    macsnapHeading: "MacSnap en action",
+    macsnapSubtitle: "Ancrez les fenêtres comme sur Windows.",
   },
   features: {
     heading: "Pourquoi choisir les apps Sprout Studio ?",
@@ -979,6 +1100,11 @@ const fr: Translation = {
         features: ["Bascule d'échange de touches instantanée", "Liste blanche/noire par app", "Léger et natif", "11 langues"],
         cta: "Acheter MaCtrl — $5",
       },
+      macsnap: {
+        description: "Snap Layouts style Windows pour Mac",
+        features: ["Ancrer en moitiés, tiers et coins", "Raccourcis personnalisés", "Support multi-écrans", "11 langues"],
+        cta: "Acheter MacSnap — $5",
+      },
     },
   },
   footer: {
@@ -987,8 +1113,8 @@ const fr: Translation = {
     refund: "Politique de remboursement",
   },
   meta: {
-    title: "Sprout Studio — Apps Mac essentielles | MacXplorer & MaCtrl",
-    description: "Les meilleures apps pour passer de Windows à Mac. MacXplorer apporte l'Explorateur Windows sur macOS, MaCtrl remappes vos touches — achat unique.",
+    title: "Sprout Studio — Apps Mac essentielles | MacXplorer, MaCtrl & MacSnap",
+    description: "Les meilleures apps pour passer de Windows à Mac. MacXplorer apporte l'Explorateur Windows sur macOS, MaCtrl remappes vos touches, MacSnap ajoute les Snap Layouts — achat unique.",
   },
 };
 
@@ -1020,12 +1146,20 @@ const ptBR: Translation = {
       features: ["Troca de teclas instantânea", "Lista branca/preta por app", "Leve e nativo", "11 idiomas"],
       cta: "Comprar MaCtrl — $5",
     },
+    macsnap: {
+      subtitle: "Snap de janelas · $5",
+      desc: "Snap Layouts no estilo Windows, fielmente recriados para Mac. Encaixe janelas em metades, terços ou cantos com um atalho — exatamente como no Windows.",
+      features: ["Estilo Snap Layouts Windows", "Atalhos de teclado personalizados", "Suporte multi-monitor", "Leve e nativo", "11 idiomas"],
+      cta: "Comprar MacSnap — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorer em ação",
     macxplorerSubtitle: "Veja o app real antes de comprar.",
     mactrlHeading: "MaCtrl em ação",
     mactrlSubtitle: "Toggle na barra de menu, lista branca e preta — tudo em um app leve.",
+    macsnapHeading: "MacSnap em ação",
+    macsnapSubtitle: "Encaixe janelas exatamente como no Windows.",
   },
   features: {
     heading: "Por que escolher os apps Sprout Studio?",
@@ -1082,6 +1216,11 @@ const ptBR: Translation = {
         features: ["Toggle de troca de teclas instantânea", "Lista branca/preta por app", "Leve e nativo", "11 idiomas"],
         cta: "Comprar MaCtrl — $5",
       },
+      macsnap: {
+        description: "Snap Layouts estilo Windows para Mac",
+        features: ["Encaixar em metades/terços/cantos", "Atalhos personalizados", "Suporte multi-monitor", "11 idiomas"],
+        cta: "Comprar MacSnap — $5",
+      },
     },
   },
   footer: {
@@ -1090,8 +1229,8 @@ const ptBR: Translation = {
     refund: "Política de reembolso",
   },
   meta: {
-    title: "Sprout Studio — Apps essenciais para Mac | MacXplorer & MaCtrl",
-    description: "Os melhores apps para quem migra do Windows para Mac. MacXplorer traz o Explorador de Arquivos para macOS, MaCtrl remapeia suas teclas — pagamento único.",
+    title: "Sprout Studio — Apps essenciais para Mac | MacXplorer, MaCtrl & MacSnap",
+    description: "Os melhores apps para quem migra do Windows para Mac. MacXplorer traz o Explorador de Arquivos para macOS, MaCtrl remapeia suas teclas, MacSnap adiciona Snap Layouts — pagamento único.",
   },
 };
 
@@ -1123,12 +1262,20 @@ const es: Translation = {
       features: ["Intercambio de teclas al instante", "Lista blanca/negra por app", "Ligero y nativo", "11 idiomas"],
       cta: "Comprar MaCtrl — $5",
     },
+    macsnap: {
+      subtitle: "Snap de ventanas · $5",
+      desc: "Snap Layouts al estilo Windows, fielmente recreados para Mac. Fija ventanas a mitades, tercios o esquinas con un atajo — exactamente como en Windows.",
+      features: ["Estilo Snap Layouts Windows", "Atajos de teclado personalizados", "Soporte multi-pantalla", "Ligero y nativo", "11 idiomas"],
+      cta: "Comprar MacSnap — $5",
+    },
   },
   screenshots: {
     macxplorerHeading: "MacXplorer en acción",
     macxplorerSubtitle: "Ve la app real antes de comprar.",
     mactrlHeading: "MaCtrl en acción",
     mactrlSubtitle: "Toggle en la barra de menú, lista blanca y negra — todo en una app ligera.",
+    macsnapHeading: "MacSnap en acción",
+    macsnapSubtitle: "Fija ventanas igual que en Windows.",
   },
   features: {
     heading: "¿Por qué elegir las apps de Sprout Studio?",
@@ -1185,6 +1332,11 @@ const es: Translation = {
         features: ["Toggle de intercambio de teclas instantáneo", "Lista blanca/negra por app", "Ligero y nativo", "11 idiomas"],
         cta: "Comprar MaCtrl — $5",
       },
+      macsnap: {
+        description: "Snap Layouts estilo Windows para Mac",
+        features: ["Fijar en mitades, tercios y esquinas", "Atajos personalizados", "Soporte multi-pantalla", "11 idiomas"],
+        cta: "Comprar MacSnap — $5",
+      },
     },
   },
   footer: {
@@ -1193,8 +1345,8 @@ const es: Translation = {
     refund: "Política de reembolso",
   },
   meta: {
-    title: "Sprout Studio — Apps esenciales para Mac | MacXplorer & MaCtrl",
-    description: "Las mejores apps para quienes cambian de Windows a Mac. MacXplorer lleva el Explorador de Windows a macOS, MaCtrl reasigna tus teclas — pago único.",
+    title: "Sprout Studio — Apps esenciales para Mac | MacXplorer, MaCtrl & MacSnap",
+    description: "Las mejores apps para quienes cambian de Windows a Mac. MacXplorer lleva el Explorador de Windows a macOS, MaCtrl reasigna tus teclas, MacSnap añade Snap Layouts — pago único.",
   },
 };
 
