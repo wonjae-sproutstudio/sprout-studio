@@ -72,7 +72,7 @@ const jsonLd = {
 export const metadata: Metadata = {
   title: "Sprout Studio — Powerful Apps for Mac",
   description:
-    "Sprout Studio crafts powerful, focused Mac apps. Explore MacXplorer and MaCtrl.",
+    "Sprout Studio crafts powerful, focused Mac apps. Explore MacXplorer, MaCtrl, and MacSnap.",
   metadataBase: new URL("https://sproutstudio.app"),
   alternates: {
     languages: {
