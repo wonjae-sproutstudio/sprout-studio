@@ -9,6 +9,7 @@ const languages = [
 const routes: { path: string; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; priority: number }[] = [
   { path: "/",        changeFrequency: "weekly",  priority: 1.0 },
   { path: "/about",   changeFrequency: "monthly", priority: 0.8 },
+  { path: "/macsnap", changeFrequency: "weekly",  priority: 0.9 },
   { path: "/privacy", changeFrequency: "yearly",  priority: 0.5 },
   { path: "/terms",   changeFrequency: "yearly",  priority: 0.5 },
   { path: "/refund",  changeFrequency: "yearly",  priority: 0.5 },

@@ -15,7 +15,7 @@ const jsonLd = {
       "@id": "https://sproutstudio.app/#website",
       url: "https://sproutstudio.app/",
       name: "Sprout Studio",
-      description: "MacXplorer & MaCtrl - Essential Mac utilities by Sprout Studio",
+      description: "MacXplorer, MaCtrl & MacSnap - Essential Mac utilities by Sprout Studio",
       inLanguage: ["ko", "en", "ja", "zh-CN", "ar", "ru", "it", "de", "fr", "pt-BR", "es"],
     },
     {
@@ -44,6 +44,19 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       url: "https://sproutstudio.app/en",
       image: "https://sproutstudio.app/images/macctrlicon.png",
+      publisher: { "@type": "Organization", name: "Sprout Studio", url: "https://sproutstudio.app" },
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://sproutstudio.app/#macsnap",
+      name: "MacSnap",
+      alternateName: ["맥 화면분할", "Mac Window Snap", "Mac Screen Splitter", "맥스냅"],
+      description:
+        "Windows-style window snapping for Mac. Split your screen into halves or corners just like Windows. Essential for MacBook users coming from Windows.",
+      applicationCategory: "UtilitiesApplication",
+      operatingSystem: "macOS",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      url: "https://sproutstudio.app/en/macsnap",
       publisher: { "@type": "Organization", name: "Sprout Studio", url: "https://sproutstudio.app" },
     },
     {
